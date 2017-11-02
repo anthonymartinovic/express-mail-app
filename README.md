@@ -5,7 +5,7 @@ PROJECT: A Node mail sending service application, powered by Mailgun API and Sen
 TECHNOLOGIES USED:
 - Node.js
 - Express.js
-- Pug
+- Pug - templating engine
 - CSS3
 - JavaScript (ES6 compiled to ES5)
 
@@ -13,7 +13,9 @@ TECHNOLOGIES USED:
 
 # BUILD & DEPLOYMENT (localhost)
 
-PLEASE NOTE: This application was built for testing purposes only. If you are using a sandbox domain from Mailgun, you will have to authorise each recipient in your Mailgun account for them to be able to receive emails.
+PLEASE NOTE:
+- This application was built for testing purposes only. If you are using a sandbox domain from Mailgun, you will have to authorise each recipient in your Mailgun account for them to be able to receive emails.
+- Installation of Node.js is required for this project.
 
 1. ESP Signup
 - Sign up for both services (Mailgun & SendGrid) and create API keys for each service. You will also need a domain name for the Mailgun API (Mailgun provides a sandbox domain for testing purposes, which is enough for this project).
@@ -32,8 +34,6 @@ PLEASE NOTE: This application was built for testing purposes only. If you are us
   }
 }
 ```
-
 3. Install package.json dependencies (devDependencies are only for compiling ES6 to ES5).
 
-4. Run app
-- The starting file for this app is `app.js`.
+4. Run `node app.js`
