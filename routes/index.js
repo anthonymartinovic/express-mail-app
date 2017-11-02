@@ -36,6 +36,7 @@ router.post('/', function (req, res, next) {
 
     console.log(fromErrorReport);
     res.render('index.pug', { fromErrorReport: fromErrorReport });
+    return res.end();
   }
 
   if (req.body.cc !== '') {
@@ -120,4 +121,4 @@ router.post('/', function (req, res) {
 }); //app.post request (MAILGUN)
 
 module.exports = router;
-//# sourceMappingURL=/Users/AnthonyMartinovic/Desktop/Software Development/My Software Projects/expressMailApp/routes/index.js.map
+//# sourceMappingURL=/Users/AnthonyMartinovic/Desktop/express-mail-app-master/routes/index.js.map

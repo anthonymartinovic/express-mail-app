@@ -36,6 +36,7 @@ router.post('/', (req, res, next) => {
 
     console.log(fromErrorReport);
     res.render('index.pug', { fromErrorReport });
+    return res.end();
   }
 
   if (req.body.cc !== '') {
