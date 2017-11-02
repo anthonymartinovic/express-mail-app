@@ -1,0 +1,137 @@
+body {
+  background: #2C3E50 no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#sourceCode > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+#appWindow {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #EEE;
+  border-radius: 2px;
+  text-align: center;
+  width: 80%;
+  border-top: 4px outset #FC4349;
+  border-bottom: 4px inset #6DBCDB;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+#header > h1 {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #2C3E50;
+}
+
+h4 {
+  color: #FC4349;
+}
+
+#mailForm {
+  width: 100%;
+}
+
+#mailForm > label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #2C3E50 !important;
+  margin-top: 3px;
+  margin-bottom: 2px;
+  text-align: left;
+  width: 100%;
+}
+
+#mailForm > label > input {
+  margin-top: 3px;
+  border-radius: 4px;
+  border: 1px solid rgba(220, 220, 220, 1);
+  font-size: 12px;
+  font-weight: 300;
+  padding-left: 10px;
+  width: 100%;
+}
+
+#message {
+  margin-top: 2px;
+  border-radius: 4px;
+  border: 1px solid rgba(220, 220, 220, 1);
+  font-size: 12px;
+  font-weight: 300;
+  padding-left: 10px;
+  min-height: 170px;
+  width: 100%;
+}
+
+#mailForm > button {
+  border-radius: 2px;
+  font-weight: 200;
+  background-color: #FC4349;
+  color: #EEE;
+  padding: 8px;
+  border: none;
+  width: 100%;
+}
+
+#userMail,
+#recipientsMail,
+#carbonCopy,
+#blindCarbonCopy,
+#subject,
+#message,
+#submitButton {
+  position: relative;
+}
+
+#mailDetails {
+  margin-bottom: 10px;
+}
+
+#mailDetails > img {
+  padding-top: 14px;
+  width: 80px;
+  padding-right: 20px;
+}
+
+#mailDetails > h2 {
+  font-weight: 200;
+  color: #818181;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#mailDetails > #converter {
+  padding-left: 20px;
+  padding-top: 12px;
+  background-color: #151515;
+  border: none;
+  color: #D26C22;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#footer > p {
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 200;
+  color: #616161;
+}
+
+#footer > a > img {
+  width: 50px;
+  padding-left: 10px;
+}

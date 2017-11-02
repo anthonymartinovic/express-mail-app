@@ -1,0 +1,9 @@
+{
+  "mailgun": {
+    "API_KEY": "ENTER MAILGUN API KEY HERE",
+    "DOMAIN": "ENTER MAILGUN DOMAIN HERE"
+  },
+  "sendgrid": {
+    "API_KEY": "ENTER SENDGRID API KEY HERE"
+  }
+}

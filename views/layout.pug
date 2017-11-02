@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    title Express Mail
+    link(rel="stylesheet" href="static/stylesheets/normalize.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet" href="static/stylesheets/style.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700")
+  body
+    include includes/sourceCode.pug
+    div#appWindow
+      include includes/header.pug
+      block content
+      block script
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+      include includes/footer.pug

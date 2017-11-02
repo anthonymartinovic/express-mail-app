@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  if serverReport
+    h4 INTERNAL FAILURE: Status Code - #{serverReport}
+  else if errorReport
+    h4 MESSAGE FAILURE: #{errorReport}
+  else if success
+    h4 Message successfully sent!
+  form(action="/", method="post")#mailForm
+    label FROM
+      input(type="text" name="from" autofocus="autofocus" required)#userMail
+    br
+    label TO (If sending to multiple recipients, seperate each address with a comma.)
+      input(type="text" name="to" autofocus="autofocus" required)#recipientsMail
+    br
+    label CC's
+      input(type="text" name="cc" autofocus="autofocus")#carbonCopy
+    br
+    label BCC's
+      input(type="text" name="bcc" autofocus="autofocus")#blindCarbonCopy
+    br
+    label SUBJECT
+      input(type="text" name="subject" autofocus="autofocus" required)#subject
+    br
+    label MESSAGE
+      textarea(type="text" name="text" autofocus="autofocus" required)#message
+    button(type="submit")#submitButton Submit
