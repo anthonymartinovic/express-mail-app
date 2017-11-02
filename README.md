@@ -9,6 +9,8 @@ TECHNOLOGIES USED:
 - CSS3
 - JavaScript (ES6 compiled to ES5)
 
+('request' used as HTTP client of choice.)
+
 # BUILD & DEPLOYMENT (localhost)
 
 PLEASE NOTE: This application was built for testing purposes only. If you are using a sandbox domain from Mailgun, you will have to authorise each recipient in your Mailgun account for them to be able to receive emails.
@@ -31,7 +33,7 @@ PLEASE NOTE: This application was built for testing purposes only. If you are us
 }
 ```
 
-3. Install package.json files
+3. Install package.json dependencies (devDependencies are only for compiling ES6 to ES5).
 
 4. Run app on localhost
 - The starting file for this app is `app.js`.
