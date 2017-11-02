@@ -7,14 +7,14 @@ TECHNOLOGIES USED:
 - Express.js
 - Pug
 - CSS3
-- JavaScript (ES6 compiled to ES5 + ES5)
+- JavaScript (ES6 compiled to ES5)
 
 # BUILD & DEPLOYMENT (localhost)
 
-PLEASE NOTE: This application was built for testing purposes only.
+PLEASE NOTE: This application was built for testing purposes only. If you are using a sandbox domain from Mailgun, you will have to authorise each recipient in your Mailgun account for them to be able to receive emails.
 
 1. ESP Signup
-- Sign up for both services (Mailgun & SendGrid) and create API keys for each service. You will also need a domain name for the Mailgun API (Mailgun provides sample domains for testing purposes, which is enough for this project).
+- Sign up for both services (Mailgun & SendGrid) and create API keys for each service. You will also need a domain name for the Mailgun API (Mailgun provides a sandbox domain for testing purposes, which is enough for this project).
 
 2. INSERT API & DOMAIN INFO
 - Once you have both API keys and a Mailgun domain, insert all this information in the `data/api.json` file, as shown below:
@@ -30,3 +30,8 @@ PLEASE NOTE: This application was built for testing purposes only.
   }
 }
 ```
+
+3. Install package.json files
+
+4. Run app on localhost
+- The starting file for this app is `app.js`.
