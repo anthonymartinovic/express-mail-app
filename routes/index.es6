@@ -28,6 +28,16 @@ router.post('/', (req, res, next) => {
         value: `${req.body.text}` } ]
   };
 
+  let fromAddress = req.body.from;
+
+  //To prevent multple 'from' addresses
+  if (fromAddress.includes(',')) {
+    let fromErrorReport = 'User ERROR: Invalid "from" address or multiple "from" addresses used.';
+
+    console.log(fromErrorReport);
+    res.render('index.pug', { fromErrorReport });
+  }
+
   if (req.body.cc !== '') {
     data.personalizations[0].cc = [ { email: `${req.body.cc}` } ];
   }
@@ -68,7 +78,7 @@ router.post('/', (req, res, next) => {
 router.post('/', (req, res) => {
 
   let data = {
-    'from': req.body.from,
+    'from': [req.body.from],
     'to': [req.body.to],
     'subject': req.body.subject,
     'text': req.body.text,
