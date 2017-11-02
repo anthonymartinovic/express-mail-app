@@ -5,10 +5,12 @@ block content
     h4 INTERNAL FAILURE: Status Code - #{serverReport}
   else if errorReport
     h4 MESSAGE FAILURE: #{errorReport}
+  else if fromErrorReport
+    h4 #{fromErrorReport}
   else if success
     h4 Message successfully sent!
   form(action="/", method="post")#mailForm
-    label FROM
+    label FROM (Enter one email address.)
       input(type="text" name="from" autofocus="autofocus" required)#userMail
     br
     label TO (If sending to multiple recipients, seperate each address with a comma.)

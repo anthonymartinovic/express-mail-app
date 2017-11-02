@@ -28,6 +28,16 @@ router.post('/', function (req, res, next) {
       value: '' + req.body.text }]
   };
 
+  var fromAddress = req.body.from;
+
+  //To prevent multple 'from' addresses
+  if (fromAddress.includes(',')) {
+    var fromErrorReport = 'User ERROR: Invalid "from" address or multiple "from" addresses used.';
+
+    console.log(fromErrorReport);
+    res.render('index.pug', { fromErrorReport: fromErrorReport });
+  }
+
   if (req.body.cc !== '') {
     data.personalizations[0].cc = [{ email: '' + req.body.cc }];
   }
@@ -66,7 +76,7 @@ router.post('/', function (req, res, next) {
 router.post('/', function (req, res) {
 
   var data = {
-    'from': req.body.from,
+    'from': [req.body.from],
     'to': [req.body.to],
     'subject': req.body.subject,
     'text': req.body.text
@@ -110,4 +120,4 @@ router.post('/', function (req, res) {
 }); //app.post request (MAILGUN)
 
 module.exports = router;
-//# sourceMappingURL=/Users/AnthonyMartinovic/Desktop/Software Development/My Software Projects/expressMailService/routes/index.js.map
+//# sourceMappingURL=/Users/AnthonyMartinovic/Desktop/Software Development/My Software Projects/expressMailApp/routes/index.js.map
