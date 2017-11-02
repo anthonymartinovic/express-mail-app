@@ -1,5 +1,5 @@
 {
-  "name": "nodeExpressMail",
+  "name": "expressMailApp",
   "version": "1.0.0",
   "description": "A Node application which provides a mail sending service.",
   "private": "true",
@@ -12,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anthony Martinovic",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0"
