@@ -35,5 +35,5 @@ PLEASE NOTE: This application was built for testing purposes only. If you are us
 
 3. Install package.json dependencies (devDependencies are only for compiling ES6 to ES5).
 
-4. Run app on localhost
+4. Run app
 - The starting file for this app is `app.js`.
